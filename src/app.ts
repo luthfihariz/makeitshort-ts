@@ -1,10 +1,9 @@
 import 'dotenv/config';
 import express from 'express';
-import userRouter from './modules/user/route'
-import urlShortenerRouter from './modules/urlshortener/route'
+import userRouter from './module/user/route'
+import urlShortenerRouter from './module/urlshortener/route'
 import config from './config'
 import bodyParser from 'body-parser';
-import UserController from './modules/user/controller/user.controller';
 
 const app = express();
 app.use(bodyParser.json());
